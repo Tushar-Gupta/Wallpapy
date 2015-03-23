@@ -20,6 +20,6 @@ After going through the steps above, you can simply run the script by opening co
 
   python Wallpapy.py
   
-<Currently under development>
+(Currently under development)
 
 (do not use requirements.txt)
