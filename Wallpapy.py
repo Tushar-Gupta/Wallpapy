@@ -1,4 +1,4 @@
-
+#Contributors: Tushar Gupta
 from BeautifulSoup import BeautifulSoup as bs
 import urlparse
 from urllib2 import urlopen
