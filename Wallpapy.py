@@ -26,13 +26,13 @@ def main(url, out_folder="/images/"):
             if  not (topImageURL.endswith(tuple(ext))):
                 topImageURL = topImageURL + ".jpg"
             if not (topImageURL == lastTopImageURL):
-                print "\nNew top image found.."
+                print "New top image found.."
                 lastTopImageURL = topImageURL
-                print "\nDownloading new image.."
+                print "Downloading new image.."
                 urlretrieve(topImageURL, "images/topImage.jpg")
-                print "\nDownload complete..\nSetting as wallpaper"
+                print "Download complete..\nSetting as wallpaper"
                 setWallpaperWithCtypes(os.path.abspath("images/topImage.jpg"))
-                print "\nNew image set as wallpaper"
+                print "\nNew image set as wallpaper.\nWill check again after 2 minutes."
         except:
             print "\nToo many requests. Will try again in 2 minutes."    
         time.sleep(120)
