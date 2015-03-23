@@ -35,7 +35,7 @@ def main(url, out_folder="/images/"):
                 print "\nNew image set as wallpaper.\nWill check again after 2 minutes."
         except:
             print "\nToo many requests. Will try again in 2 minutes."    
-        time.sleep(120)
+        time.sleep(60)
     
 if __name__ == "__main__":
     url = "http://www.reddit.com/r/EarthPorn/top/"
