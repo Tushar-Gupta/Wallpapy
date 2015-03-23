@@ -16,7 +16,7 @@ You'll need to install the following things before you can run the script. Open 
 </li>
 </ul>
 
-After going through the steps above, you can simply run the script by opening commandline in the Wallpapy directory and typing in:
+After going through the steps above, you can simply clone the rep and run the script by opening commandline in the Wallpapy directory and typing in:
 
   python Wallpapy.py
   
