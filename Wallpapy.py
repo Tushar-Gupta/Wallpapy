@@ -32,9 +32,11 @@ def main(url, out_folder="/images/"):
                 urlretrieve(topImageURL, "images/topImage.jpg")
                 print "Download complete..\nSetting as wallpaper"
                 setWallpaperWithCtypes(os.path.abspath("images/topImage.jpg"))
-                print "\nNew image set as wallpaper.\nWill check again after 2 minutes."
+                print "\nNew image set as wallpaper.\nWill check again in a minute."
+            else:
+                print "Top image is still the same.\nWill check again in a minute."
         except:
-            print "\nToo many requests. Will try again in 1 minute."    
+            print "\nToo many requests. Will try again in a minute."    
         time.sleep(60)
     
 if __name__ == "__main__":
