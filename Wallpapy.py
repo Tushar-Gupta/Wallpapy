@@ -34,7 +34,7 @@ def main(url, out_folder="/images/"):
                 setWallpaperWithCtypes(os.path.abspath("images/topImage.jpg"))
                 print "\nNew image set as wallpaper.\nWill check again after 2 minutes."
         except:
-            print "\nToo many requests. Will try again in 2 minutes."    
+            print "\nToo many requests. Will try again in 1 minute."    
         time.sleep(60)
     
 if __name__ == "__main__":
