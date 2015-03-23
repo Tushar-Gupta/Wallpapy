@@ -18,6 +18,7 @@ def main(url, out_folder="/images/"):
     ext = ["jpg","jpeg","png","bmp"]
     while True:
         try:
+            print "\nChecking again.."
             soup = bs(urlopen(url))
             parsed = list(urlparse.urlparse(url))
             allImages =  soup.findAll('a', {'class': 'title may-blank '})
@@ -25,9 +26,13 @@ def main(url, out_folder="/images/"):
             if  not (topImageURL.endswith(tuple(ext))):
                 topImageURL = topImageURL + ".jpg"
             if not (topImageURL == lastTopImageURL):
+                print "\nNew top image found.."
                 lastTopImageURL = topImageURL
+                print "\nDownloading new image.."
                 urlretrieve(topImageURL, "images/topImage.jpg")
+                print "\nDownload complete..\nSetting as wallpaper"
                 setWallpaperWithCtypes(os.path.abspath("images/topImage.jpg"))
+                print "\nNew image set as wallpaper"
         except:
             print "\nToo many requests. Will try again in 2 minutes."    
         time.sleep(120)
