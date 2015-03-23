@@ -22,7 +22,7 @@ def main(url, out_folder="/images/"):
             soup = bs(urlopen(url))
             parsed = list(urlparse.urlparse(url))
             allImages =  soup.findAll('a', {'class': 'title may-blank '})
-            topImageURL = allImages[1]['href']
+            topImageURL = allImages[0]['href']
             if  not (topImageURL.endswith(tuple(ext))):
                 topImageURL = topImageURL + ".jpg"
             if not (topImageURL == lastTopImageURL):
