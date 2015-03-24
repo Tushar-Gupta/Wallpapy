@@ -1,7 +1,7 @@
 
 <h2>Wallpapy</h2>
 
-Wallpapy is a small and simple script written in Python that keeps your Windows' wallpaper udpated with the top picture on reddit.com/r/earthporn
+Wallpapy is a small and simple script written in Python that keeps your Windows' wallpaper udpated with the top picture on <a href="http://www.reddit.com/r/earthporn">EarthPorn</a>
 
 <h3>Instructions for Use</h3>
 You need to make sure you have Python 2.7 installed on your machine.
