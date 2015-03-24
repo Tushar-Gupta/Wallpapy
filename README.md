@@ -23,8 +23,8 @@ You'll need to install the following things before you can run the script. Open 
   python Wallpapy.py
 </li>
 </ul> 
+Keep it running in the background to stay updated.
+<br>Now, brainfap to earthporn.
 
-Now, brainfap to earthporn.
-
-(Currently under development)
+(Currently under development)<br>
 (do not use requirements.txt)
